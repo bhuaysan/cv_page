@@ -1,0 +1,194 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Example weight */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: #5a6374; /* New background color */
+  color: #dcdfe4; /* Light text color for readability */
+}
+
+
+p{
+  size: 18;
+}
+
+
+.page {
+  margin: 1% 20% 10% 20%;
+  background-color: #282c34; /* New background color */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+header,
+footer {
+  text-align: center;
+  padding: 20px;
+}
+nav#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px;
+  z-index: 1000;
+}
+nav#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav#navbar ul li a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+nav#navbar ul li a:hover {
+  background-color: #555;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+form#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+form#contact-form input,
+form#contact-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+form#contact-form button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  /*max-width: 600px;  Limits the width of the text box */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  flex: 1;
+  /* padding-left: 20px; */
+  line-height: 1.6;
+  max-width: 600px;
+  /* margin-right: 35%; */
+}
+
+.profile-photo-container {
+  flex: 0 0 300px; /* Adjust the width of the photo container */
+  text-align: center;
+  margin-left: 15%;
+}
+
+.profile-photo {
+  width: 100%; /* Make the photo responsive within the container */
+  height: auto;
+  border-radius: 10%;
+}
+
+.section {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header-section {
+  font-size: medium;
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  nav#navbar ul {
+    flex-direction: column;
+    line-height: 2;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    padding-left: 0;
+    padding-top: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .profile-photo-container {
+    flex: 0 0 100px; /* Adjust the size for smaller devices */
+  }
+}
+
+.terminal {
+  background-color: #282c34;
+  border-radius: 5px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adds space between skill rows */
+}
+
+.skill p {
+  margin: 0;
+  flex: 0.3; /* Allows text to take up available space */
+  padding-right: 10px; /* Adds some space between text and bar */
+}
+
+.bar {
+  background-color: #5a6374;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 150px; /* Fixed width for the bar */
+  height: 20px;
+}
+
+.progress {
+  background-color: #33c3f0;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 2s;
+}
+
+.container-experience {
+  display: flex;
+  column-gap: 60px;
+  margin-top: 40px;
+}
+
+.container-list-left {
+  /* background-color: red; */
+  width: 200px;
+}
+
+.container-list-right {
+  /* background-color: green; */
+  padding-top: 1rem;
+  width: 600px;
+  line-height: 1.6;
+}
+
+
+h2 {
+  padding-bottom: 10px; /* Fügt etwas Abstand zwischen Text und Linie hinzu */
+  border-bottom: 2px dashed #dcdfe4; /* Erstellt eine gestrichelte Linie in der Farbe deiner Texte */
+  margin-bottom: 20px; /* Fügt Abstand unter der Linie hinzu, um die Abschnitte zu trennen */
+}
